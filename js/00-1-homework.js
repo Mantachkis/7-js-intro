@@ -6,9 +6,9 @@ Po kiekvieno jų inicijavimo, išvesti į console */
 
 const pirmasSkaicius = 99;
 console.log(pirmasSkaicius);
-const antrasSkaicius = 99;
+const antrasSkaicius = 100;
 console.log(antrasSkaicius);
-const treciasSkaicius = 99;
+const treciasSkaicius = 80;
 console.log(treciasSkaicius);
 
 console.log('--------------------');
@@ -98,3 +98,223 @@ console.log(treciasSakinys);
 
 
 console.log('--------------------');
+
+//3. Kintamųjų palyginimas
+
+/*Lyginant, jei rezultatas tenkina palyginimo sąlygą, tai į console išvesti žodį “Pomidoras”,
+ o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.*/
+
+/*Tarpusavyje palyginti skaičiaus tipo kintamuosius:
+kuris didesnis */
+if (pirmasSkaicius > antrasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasSkaicius < treciasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+/*kuris mažesnis*/
+if (pirmasSkaicius < antrasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasSkaicius < treciasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+/*ar jie lygūs*/
+
+if (pirmasSkaicius == antrasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasSkaicius == treciasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+
+
+/*ar jie nelygūs*/
+if (pirmasSkaicius != antrasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasSkaicius != treciasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+
+
+/*kuris didesnis arba lygus*/
+if (pirmasSkaicius <= antrasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasSkaicius <= treciasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+
+/*kuris mažesnis arba lygus*/
+
+if (pirmasSkaicius >= antrasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasSkaicius >= treciasSkaicius) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+
+///Išvesti teksto tipo kintamųjų ilgius
+
+const pirmasIlgis= pirmasTekstas.length;
+console.log(pirmasIlgis);
+
+const antrasIlgis= antrasTekstas.length;
+console.log(antrasIlgis);
+
+const treciasIlgis= treciasTekstas.length;
+console.log(treciasIlgis);
+
+//Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
+//kuris didesnis
+if (pirmasIlgis > antrasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasIlgis > treciasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+
+//kuris mažesnis
+
+if (pirmasIlgis < antrasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasIlgis < treciasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+//ar jie lygūs
+if (pirmasIlgis == antrasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasIlgis == treciasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+
+//ar jie nelygūs
+
+if (pirmasIlgis != antrasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasIlgis != treciasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+//kuris didesnis arba lygus
+if (pirmasIlgis >= antrasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasIlgis >= treciasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+//kuris mažesnis arba lygus
+
+if (pirmasIlgis <= antrasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+
+  if (antrasIlgis <= treciasIlgis) {
+    console.log('Pomidoras');
+  } else {
+      console.log('Bandykite kita karta');
+  }
+  
+console.log('--------------------');
+//Išvesti sąrašo tipo kintamųjų ilgius
+
+const pirmasSarasoIlgis= pirmasTekstas.length;
+console.log(pirmasSarasoIlgis);
+
+const antrasSarasoIlgis= antrasTekstas.length;
+console.log(antrasSarasoIlgis);
+
+const treciasSarasoIlgis= treciasTekstas.length;
+console.log(treciasSarasoIlgis);
+
+//Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
+//kuris didesnis
+//kuris mažesnis
+//ar jie lygūs
+//ar jie nelygūs
+//kuris didesnis arba lygus
+//kuris mažesnis arba lygus
+
+
