@@ -87,13 +87,13 @@ console.log(treciosarasoSum);
 console.log('--------------------');
 /*Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas */
 
-const pirmasSakinys= pirmasTekstoSarasas[0] + ', ' + pirmasTekstoSarasas[1] + ', ' + pirmasTekstoSarasas[2] + ', ' + pirmasTekstoSarasas[3] + ', ' + pirmasTekstoSarasas[4];
+const pirmasSakinys= pirmasTekstoSarasas[4] + ', ' + pirmasTekstoSarasas[3] + ', ' + pirmasTekstoSarasas[2] + ', ' + pirmasTekstoSarasas[1] + ', ' + pirmasTekstoSarasas[0];
 console.log(pirmasSakinys);
 
-const antrasSakinys= antrasTekstoSarasas[0] + ', ' + antrasTekstoSarasas[1] + ', ' + antrasTekstoSarasas[2] + ', ' + antrasTekstoSarasas[3] + ', ' + antrasTekstoSarasas[4];
+const antrasSakinys= antrasTekstoSarasas[4] + ', ' + antrasTekstoSarasas[3] + ', ' + antrasTekstoSarasas[2] + ', ' + antrasTekstoSarasas[1] + ', ' + antrasTekstoSarasas[0];
 console.log(antrasSakinys);
 
-const treciasSakinys= treciasTekstoSarasas[0] + ', ' + treciasTekstoSarasas[1] + ', ' + treciasTekstoSarasas[2] + ', ' + treciasTekstoSarasas[3] + ', ' + treciasTekstoSarasas[4];
+const treciasSakinys= treciasTekstoSarasas[4] + ', ' + treciasTekstoSarasas[3] + ', ' + treciasTekstoSarasas[2] + ', ' + treciasTekstoSarasas[1] + ', ' + treciasTekstoSarasas[0];
 console.log(treciasSakinys);
 
 
@@ -135,13 +135,13 @@ if (pirmasSkaicius < antrasSkaicius) {
 console.log('--------------------');
 /*ar jie lygūs*/
 
-if (pirmasSkaicius == antrasSkaicius) {
+if (pirmasSkaicius === antrasSkaicius) {
     console.log('Pomidoras');
   } else {
       console.log('Bandykite kita karta');
   }
 
-  if (antrasSkaicius == treciasSkaicius) {
+  if (antrasSkaicius === treciasSkaicius) {
     console.log('Pomidoras');
   } else {
       console.log('Bandykite kita karta');
@@ -151,13 +151,13 @@ console.log('--------------------');
 
 
 /*ar jie nelygūs*/
-if (pirmasSkaicius != antrasSkaicius) {
+if (pirmasSkaicius !== antrasSkaicius) {
     console.log('Pomidoras');
   } else {
       console.log('Bandykite kita karta');
   }
 
-  if (antrasSkaicius != treciasSkaicius) {
+  if (antrasSkaicius !== treciasSkaicius) {
     console.log('Pomidoras');
   } else {
       console.log('Bandykite kita karta');
@@ -199,13 +199,13 @@ console.log('--------------------');
 
 ///Išvesti teksto tipo kintamųjų ilgius
 
-const pirmasIlgis= pirmasTekstas.length;
+const pirmasIlgis = pirmasTekstas.length;
 console.log(pirmasIlgis);
 
-const antrasIlgis= antrasTekstas.length;
+const antrasIlgis = antrasTekstas.length;
 console.log(antrasIlgis);
 
-const treciasIlgis= treciasTekstas.length;
+const treciasIlgis = treciasTekstas.length;
 console.log(treciasIlgis);
 
 //Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
@@ -240,13 +240,13 @@ if (pirmasIlgis < antrasIlgis) {
   
 console.log('--------------------');
 //ar jie lygūs
-if (pirmasIlgis == antrasIlgis) {
+if (pirmasIlgis === antrasIlgis) {
     console.log('Pomidoras');
   } else {
       console.log('Bandykite kita karta');
   }
 
-  if (antrasIlgis == treciasIlgis) {
+  if (antrasIlgis === treciasIlgis) {
     console.log('Pomidoras');
   } else {
       console.log('Bandykite kita karta');
@@ -256,7 +256,7 @@ console.log('--------------------');
 
 //ar jie nelygūs
 
-if (pirmasIlgis != antrasIlgis) {
+if (pirmasIlgis !== antrasIlgis) {
     console.log('Pomidoras');
   } else {
       console.log('Bandykite kita karta');
@@ -300,21 +300,75 @@ if (pirmasIlgis <= antrasIlgis) {
 console.log('--------------------');
 //Išvesti sąrašo tipo kintamųjų ilgius
 
-const pirmasSarasoIlgis= pirmasTekstas.length;
-console.log(pirmasSarasoIlgis);
+const sarasas1 = [1, 2, 4, 8, 9, 10, 15, 1, 4];
+const sarasas2 = [10, 20, 40, 80, 90];
+const sarasas3 = [100, 200, 400, 800, 900, 300, 400, 500, 400, 800, 1000, 1, 4, 4];
 
-const antrasSarasoIlgis= antrasTekstas.length;
-console.log(antrasSarasoIlgis);
 
-const treciasSarasoIlgis= treciasTekstas.length;
-console.log(treciasSarasoIlgis);
+
+const sarasoIlgis1= sarasas1.length;
+console.log(sarasoIlgis1);
+
+const sarasoIlgis2= sarasas2.length;
+console.log(sarasoIlgis2);
+
+const sarasoIlgis3= sarasas3.length;
+console.log(sarasoIlgis3);
 
 //Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
 //kuris didesnis
-//kuris mažesnis
-//ar jie lygūs
-//ar jie nelygūs
-//kuris didesnis arba lygus
-//kuris mažesnis arba lygus
+const kurisDidesnis = sarasoIlgis1 > sarasoIlgis2 ? 'didesnis pirmas' : 'didesnis antras'
+console.log (kurisDidesnis)
 
+const kurisDidesnis2 = sarasoIlgis2 > sarasoIlgis3 ? 'didesnis antras' : 'didesnis trecias'
+console.log (kurisDidesnis2)
+
+console.log('--------------------');
+
+//kuris mažesnis
+
+const kurisMazesnis = sarasoIlgis1 < sarasoIlgis2 ? 'mazesnis pirmas' : 'mazesnis antras'
+console.log (kurisMazesnis)
+
+const kurisMazesnis2 = sarasoIlgis2 < sarasoIlgis3 ? 'mazesnis antras' : 'mazesnis trecias'
+console.log (kurisMazesnis2)
+
+console.log('--------------------');
+
+//ar jie lygūs
+const arLygus = sarasoIlgis1 === sarasoIlgis2 ? 'lygus' : 'nelygus'
+console.log (arLygus)
+
+const arLygus2 = sarasoIlgis2 === sarasoIlgis3 ? 'lygus' : 'nelygus'
+console.log (arLygus2)
+
+
+console.log('--------------------');
+//ar jie nelygūs
+const nelygus = sarasoIlgis1 !== sarasoIlgis2 ? 'nelygus' : 'lygus'
+console.log (nelygus)
+
+const nelygus2 = sarasoIlgis2 !== sarasoIlgis3 ? 'nelygus' : 'lygus'
+console.log (nelygus2)
+
+
+console.log('--------------------');
+//kuris didesnis arba lygus
+const didesnisLygus = sarasoIlgis1 >= sarasoIlgis2 ? 'didesnis pirmas' : 'didesnis antras'
+console.log (didesnisLygus)
+
+const didesnisLygus2 = sarasoIlgis2 >= sarasoIlgis3 ? 'didesnis antras' : 'didesnis trecias'
+console.log (didesnisLygus2)
+
+
+console.log('--------------------');
+//kuris mažesnis arba lygus
+const maazesnisLygus = sarasoIlgis1 <= sarasoIlgis2 ? 'didesnis pirmas' : 'didesnis antras'
+console.log (maazesnisLygus)
+
+const maazesnisLygus2 = sarasoIlgis2 <= sarasoIlgis3 ? 'didesnis antras' : 'didesnis trecias'
+console.log (maazesnisLygus2)
+
+
+console.log('--------------------');
 
