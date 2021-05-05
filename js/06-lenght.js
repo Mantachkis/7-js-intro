@@ -3,7 +3,7 @@ const hi = 'Labas rytas.';
 const hiSize = hi.length;
 
 // Tekto "Labas" ilgis yra 5 simboliai.
-const ans = `Tekto "${hi}" ilgis yra ${hiSize} simboliai.`;
+const ans = `Teksto "${hi}" ilgis yra ${hiSize} simboliai.`;
 
 console.log(ans);
 

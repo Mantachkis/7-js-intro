@@ -26,3 +26,29 @@ if (amzius2 >= cenzas2) {
 }
 
 console.log('Ar ileisti (2):', arIleisti2);
+
+console.log('-------------');
+
+const ats = 0 > 1 ? 2 < 3 ? 4 : 5 : 6;
+
+/*
+0 > 1 
+    ? 2 > 3 
+        ? 4 
+        : 5 
+    : 6;
+*/
+
+console.log(ats);
+
+const boo = false ? true ? 1 : 2 : 3;
+
+/*
+false 
+    ? true 
+        ? 1 
+        : 2
+    : 3;
+*/
+
+console.log(boo);
