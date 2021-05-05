@@ -1,19 +1,43 @@
 //         Ciklo for panaudojimas
 
 //Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
-let a=0;
-const b=4;
+//0 - 4
+const nuo=0;
+const iki=4;
+let sum=0
 
-for (let i = a-1 ; index < array.length; index++) {
-    const element = array[index];
+for (let i = nuo  ; i <= iki ; i++) {
+    sum += i;
     
 }
+console.log(sum);
 
-//0 - 0
-
-//0 - 4
 
 //0 - 100
+var i=0;
+const nuo2 = 0;
+const iki2 = 100;
+var number = null;
+
+for (; i <= iki2 ;) {
+  number += i;
+  i++;
+}
+console.log(number);
+//0 - 0
+
+var count=null;
+ const start=0;
+ const end=100;
+ var x;
+ for(x in end){
+     count += x;
+ }
+ console.log(x);
+
+
+
+
 
 //574 - 815
 
