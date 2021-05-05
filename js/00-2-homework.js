@@ -28,12 +28,16 @@ console.log(number);
 
 var count=null;
  const start=0;
- const end=100;
- var x;
- for(x in end){
+ var end=100;
+ var x=0;
+ for(start in end){
      count += x;
+     x++;
  }
- console.log(x);
+ console.log(count);
+
+
+
 
 
 
@@ -44,5 +48,44 @@ var count=null;
 //-50 - 50
 
 //-70 - 30
+
+
 //panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
 //pvz.: “abcdef” -> “fedcba”
+
+
+const tekstas = 'abcdef';
+let reverse = '';
+
+for (let i = tekstas.length - 1; i >= 0; i--) {
+    reverse += tekstas[i];
+}
+
+console.log(tekstas, '->', reverse);
+
+
+console.log('----------' );
+
+
+const tekstas1 = 'abcdef';
+let reversed = "";
+for (let value of tekstas1) {
+  reversed = value + reversed;
+}
+
+console.log(tekstas1 , '->', reversed);
+
+
+console.log('----------' );
+
+
+
+const tekstas2 = 'abcdef';
+let reversed2 = "";
+
+for (let a = tekstas2.length - 1 ; a >= 0; a--) {
+ reversed2 += tekstas2[a];
+    
+}
+console.log(reversed2);
+
