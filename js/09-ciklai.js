@@ -11,3 +11,7 @@ filter
 sort
 reduce
 */
+
+array.forEach(element => {
+    
+});
