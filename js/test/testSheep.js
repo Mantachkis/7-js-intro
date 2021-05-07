@@ -1,14 +1,13 @@
 function countSheeps(arrayOfSheep) {
-    var avis = 0;
-    for( let i = 0; i < arrayOfSheep.lenght; i++)
-      { 
-        if(arrayOfSheep[i]=== true);{
-          avis++;
+    let avis = 0;
+    for(let i = 0; i < arrayOfSheep.length; i++)
+     {
+        if(arrayOfSheep[i]) {
+        avis += 1
         }
-      
-     
-      }
-      return avis;
+  
+    }
+    return avis;
   }
 
   var array1 = [true,  true,  true,  false,
