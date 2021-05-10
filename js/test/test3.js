@@ -1,5 +1,7 @@
 
-function arrayMadness(a, b) {
+function arrayMadness(a, b) 
+
+{
   let suma=0;
   let sumb=0;
         for (let i = 0; i < a.length; i++) {

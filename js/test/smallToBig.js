@@ -1,22 +1,22 @@
-function testObject(text)
-   
-    let testUp= /[A-Z]/;
-    let testLow=/[a-z]/;
-    for (let i = 0; i < text.length; i++) {
-        if (text[i]=testUp.test(text)) {
-            return text[i].toLowerCase();
-        }
-        else{return text[i].toUpperCase()}
-        
+function assertEquals(text) {
+let result="";
+var newText = text.split('');
+//console.log(newText);
 
-
-    }
-   
-
-
-
+for(var i=0;i<text.length;i++){
+   // console.log(i);
+if (newText[i]== newText[i].toUpperCase()){
+    result+=newText[i].toLowerCase();
+   // console.log(result);
+}
+else{
+   result+= newText[i].toUpperCase();
+   //console.log(result);
+}
 
   }
+  return result
+}
 
 
-  console.log(testObject("hello WORLD"));
+  console.log(assertEquals("hello WORLD"));
