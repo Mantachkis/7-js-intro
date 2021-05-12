@@ -3,8 +3,8 @@ function noBoringZeros(n) {
     let newN= strN.split("");
     console.log(strN);
 
-    if(newN[0]===0){
-        return newN.join('')
+    if(newN[0]==0){
+        return parseInt(newN.join(''))
     }
 
     for(var i=newN.length - 1 ; i>0;i--)
@@ -15,7 +15,7 @@ function noBoringZeros(n) {
            newN.splice(i,1);
         }
         else{
-            return newN.join('')
+            return parseInt(newN.join(''))
         }
     }
     
@@ -24,4 +24,4 @@ function noBoringZeros(n) {
   }
 
 
-  console.log(noBoringZeros(960000));
+  console.log(noBoringZeros(-105));
